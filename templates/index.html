@@ -1,0 +1,95 @@
+{% load static %}
+
+{% block body %}
+
+{% include 'navigation.html' %}
+
+
+<style>
+    .container{
+        max-width: 90%;
+    }
+
+    .content{
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        background:rgba(0, 0, 0, 0.5);
+        color: white;
+        height: 30px;
+        width: 91%;
+    }
+</style>
+
+
+<div class="container-fliud" style="margin-top: 1%;">
+    <img src="{% static 'images/JobPortal.jpg' %}" style="height: 450px; width: 100%;">
+    
+</div>
+
+<div class="container" style="background-color: black; height: 570px; margin-top: 2%;">
+    <h1 class="text-center text-white">---------- | OUR PLACED STUDENTS | ----------</h1>
+    <div class="row mt-3">
+
+        <div class="col-md-3">
+            <img src="{% static 'images/g.jpg' %}" style="width: 100%; margin-top: 5%; height: 200px; border-radius: 50%;">
+            <div class="content">
+                <p>FaceBook</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/m.jpg' %}" style="width: 100%; margin-top: 5%; height: 200px; border-radius: 50%;">
+            <div class="content">
+                <p>Amazon</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/p.jpg' %}" style="width: 100%; margin-top: 5%; height: 200px; border-radius: 50%;">
+            <div class="content">
+                <p>Apple</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/qq.jpg' %}" style="width: 100%; margin-top: 5%; height: 200px; border-radius: 50%;">
+            <div class="content">
+                <p>Red Mi</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/d.jpeg' %}" style="width: 100%; margin-top: 5%; height: 200px; border-radius: 50%;">
+            <div class="content">
+                <p>Huawei</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/l.jpeg' %}" style="width: 100%; margin-top: 5%; height: 200px; border-radius: 50%;">
+            <div class="content">
+                <p>Artel</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/o.jpeg' %}" style="width: 100%; margin-top: 5%; height: 200px; border-radius: 50%;">
+            <div class="content">
+                <p>Samsung</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/logo.png' %}" style="width: 100%; margin-top: 5%; height: 200px; border-radius: 50%;">
+            <div class="content">
+                <p>Real Mi</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% include 'footer.html' %}
+
+{% endblock %}
